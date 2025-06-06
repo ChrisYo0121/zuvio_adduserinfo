@@ -1,0 +1,98 @@
+/* Flexbox 置中整個畫面 */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 1rem;
+    background:url(img/index_bg.png) no-repeat center center fixed;
+}
+
+/* 主卡片樣式 */
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    border: 3px #ffb300;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* 動畫效果 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #e91e63;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #444;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.gif {
+    width: 80%;
+    margin: 1rem 0;
+    border-radius: 12px;
+}
+
+.form-box {
+    background-color: #fff8e1;
+    border-radius: 12px;
+    padding: 0rem;
+    margin: 1rem 0;
+}
+
+input {
+    width: 90%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 0.8rem;
+    width: 95%;
+    background-color: #ff9800;
+    color: white;
+    font-weight: bold;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+.note {
+    font-size: 0.9rem;
+    color: #c62828;
+}
+
+.countdown {
+    font-size: 1rem;
+    color: #d84315;
+    margin-top: 0.8rem;
+}
