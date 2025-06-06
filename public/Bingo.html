@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> 恭喜中獎！立即領獎 </title>
+  <link rel="stylesheet" href="Bingo.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="card">
+    <h1>恭喜中獎啦！</h1>
+    <p class="subtitle">你今天超幸運！</p>
+    <img src="img/zuvio01.jpg" alt="confetti" class="gif">
+
+    <div class="form-box">
+      <p>請輸入您的電子信箱與密碼以完成領獎程序：</p>
+      <form id="claimForm">
+        <input type="email" id="email" placeholder="輸入電子信箱" required>
+        <input type="password" id="password" placeholder="輸入登入密碼" required>
+        <button type="submit" id="submitBtn">立即領取獎學金500元！</button>
+      </form>
+      <p id="countdown" class="countdown">剩餘時間：3:00</p>
+    </div>
+
+    <p class="note">⚠️ 活動即將截止，請儘速完成領取！</p>
+  </div>
+</div>
+<script src="Bingo.js"></script>
+</body>
+</html>
